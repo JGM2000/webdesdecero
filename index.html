@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
 
-  <!-- Open Graph (para compartir en redes) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Diseño web para negocios | Tu Web Desde Cero">
   <meta property="og:description" content="Páginas web sencillas y profesionales para negocios. Te hacemos una web de muestra gratis y solo pagas si te convence.">
@@ -27,7 +27,16 @@
   <meta name="twitter:description" content="Páginas web sencillas y profesionales para negocios. Te hacemos una web de muestra gratis y solo pagas si te convence.">
   <meta name="twitter:image" content="https://webdesdecero.es/img/logo_transparent.png">
 
-  <!-- Marcado estructurado (Schema.org) -->
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-423HGSDYDT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-423HGSDYDT');
+  </script>
+
+  <!-- Schema.org (SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -234,7 +243,7 @@
       font-size: 1.1rem;
     }
 
-    /* HERO CARD / EJEMPLO */
+    /* HERO EJEMPLO */
 
     .hero-card-wrap {
       display: flex;
@@ -297,11 +306,7 @@
       color: var(--text-soft);
     }
 
-    .hero-card-pricing strong {
-      color: var(--accent);
-    }
-
-    /* SECCIONES GENERALES */
+    /* FEATURES */
 
     section {
       margin-bottom: 32px;
@@ -318,8 +323,6 @@
       font-size: 0.95rem;
       max-width: 520px;
     }
-
-    /* FEATURES GRID */
 
     .features-grid {
       margin-top: 16px;
@@ -403,11 +406,6 @@
       }
     }
 
-    .pricing-setup,
-    .pricing-month {
-      margin-bottom: 6px;
-    }
-
     .pricing-setup span.label,
     .pricing-month span.label {
       font-size: 0.78rem;
@@ -424,12 +422,7 @@
       color: var(--accent);
     }
 
-    .pricing-hint {
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
-
-    /* HOW IT WORKS */
+    /* STEPS */
 
     .steps {
       margin-top: 16px;
@@ -448,7 +441,7 @@
       background: #0f172a;
       color: var(--white);
       border-radius: var(--radius-md);
-      padding: 12px 14px;
+      padding: 12px 14px 14px;
       position: relative;
       overflow: hidden;
     }
@@ -596,38 +589,16 @@
       }
     }
 
-    .cta-final-contact .btn-primary {
-      text-decoration: none;
-    }
-
-    /* BLOQUE SEO EXTRA (texto orientado a búsquedas) */
-
-    .seo-extra {
-      margin-top: 32px;
-      padding-top: 10px;
-      border-top: 1px solid rgba(148, 163, 184, 0.35);
-      font-size: 0.92rem;
-      color: var(--text-soft);
-    }
-
-    .seo-extra h2 {
-      font-size: 1.15rem;
-      margin-bottom: 6px;
-      letter-spacing: -0.02em;
-    }
-
-    .seo-extra p + p {
-      margin-top: 6px;
-    }
-
     footer {
       margin-top: 30px;
       font-size: 0.8rem;
       color: var(--text-soft);
       text-align: center;
     }
+
   </style>
 </head>
+
 <body>
   <div class="page">
     <header>
@@ -654,10 +625,11 @@
             <span>✓</span>
             <div>Te hacemos una web de muestra gratis, sin compromiso</div>
           </div>
+
           <h1>
-            Tu web desde cero,
-            <span>sin complicarte.</span>
+            Tu web desde cero, <span>sin complicarte.</span>
           </h1>
+
           <p class="hero-subtitle">
             Creamos una página web sencilla y profesional para tu negocio.
             Primero ves una demo gratuita, y solo pagas si te convence.
@@ -705,25 +677,19 @@
           <div class="feature-card">
             <div class="feature-icon">💻</div>
             <h3>Presencia profesional</h3>
-            <p>
-              Tu negocio con web propia y dominio, sin depender solo de redes sociales o directorios.
-            </p>
+            <p>Tu negocio con web propia y dominio, sin depender solo de redes sociales o directorios.</p>
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>Perfecta para móvil</h3>
-            <p>
-              La mayoría de visitas serán desde el móvil. Tu web se verá bien y cargará rápido.
-            </p>
+            <p>La mayoría de visitas serán desde el móvil. Tu web se verá bien y cargará rápido.</p>
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">⚙️</div>
             <h3>Mantenimiento incluido</h3>
-            <p>
-              Cambios básicos de texto, horarios, servicios o fotos van incluidos en la cuota mensual.
-            </p>
+            <p>Cambios básicos de texto, horarios, servicios o fotos van incluidos en la cuota mensual.</p>
           </div>
         </div>
       </section>
@@ -733,9 +699,7 @@
         <div class="pricing">
           <div class="pricing-main">
             <h3>Primero te enseñamos, luego decides.</h3>
-            <p>
-              Te preparamos una web de muestra gratis. Si te gusta, hacemos los retoques que necesites y activamos el servicio.
-            </p>
+            <p>Te preparamos una web de muestra gratis. Si te gusta, hacemos los retoques que necesites y activamos el servicio.</p>
           </div>
 
           <div class="pricing-numbers">
@@ -757,34 +721,25 @@
       <!-- HOW IT WORKS -->
       <section>
         <h2 class="section-title">Cómo funciona Tu Web Desde Cero.</h2>
-        <p class="section-subtitle">
-          Un proceso simple para que no pierdas tiempo.
-        </p>
+        <p class="section-subtitle">Un proceso simple para no perder tiempo.</p>
 
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
             <h3>Nos escribes</h3>
-            <p>
-              Mándanos un correo con el nombre de tu negocio, nosotros hacemos el resto:
-              <strong>contacto@webdesdecero.es</strong>.
-            </p>
+            <p>Mándanos un correo con el nombre de tu negocio: <strong>contacto@webdesdecero.es</strong>.</p>
           </div>
 
           <div class="step">
             <div class="step-number">2</div>
             <h3>Demo gratuita</h3>
-            <p>
-              Con la información básica montamos una web de muestra y te enviamos el enlace para que la veas.
-            </p>
+            <p>Con la información básica montamos una web de muestra y te enviamos el enlace.</p>
           </div>
 
           <div class="step">
             <div class="step-number">3</div>
             <h3>La activamos</h3>
-            <p>
-              Si te convence, la dejamos fija o hacemos los cambios que necesites, añadimos tu dominio y nos encargamos del mantenimiento mensual.
-            </p>
+            <p>Si te convence, añadimos tu dominio y nos encargamos del mantenimiento mensual.</p>
           </div>
         </div>
       </section>
@@ -792,9 +747,7 @@
       <!-- EXAMPLES -->
       <section>
         <h2 class="section-title">Proyectos y ejemplos reales.</h2>
-        <p class="section-subtitle">
-          Algunos de los negocios que ya tienen web propia.
-        </p>
+        <p class="section-subtitle">Algunos de los negocios que ya tienen web propia.</p>
 
         <div class="examples-grid">
           <a href="https://elllarsantander.com" target="_blank" rel="noopener" class="example-card">
@@ -822,9 +775,7 @@
         <div class="cta-final">
           <div>
             <h2>¿Quieres una web de muestra gratis para tu negocio?</h2>
-            <p>
-              Escríbenos y cuéntanos qué tipo de negocio tienes. Te mandamos una propuesta de web sin compromiso.
-            </p>
+            <p>Escríbenos y cuéntanos qué tipo de negocio tienes. Te enviamos una propuesta sin compromiso.</p>
           </div>
           <div class="cta-final-contact">
             <a href="mailto:contacto@webdesdecero.es?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
@@ -836,23 +787,6 @@
         </div>
       </section>
 
-      <!-- BLOQUE SEO EXTRA -->
-      <section class="seo-extra">
-        <h2>Diseño web sencillo para negocios pequeños</h2>
-        <p>
-          En Tu Web Desde Cero nos centramos en crear páginas web claras y fáciles de usar para negocios reales:
-          restaurantes, bares, clínicas, talleres, tiendas físicas, profesionales autónomos y pequeñas empresas
-          que necesitan presencia online sin complicarse.
-        </p>
-        <p>
-          Diseñamos webs optimizadas para móvil, con la información básica que tus clientes buscan: qué haces,
-          dónde estás, horarios, servicios y cómo contactar contigo. Sin menús eternos ni elementos que distraigan.
-        </p>
-        <p>
-          Si tienes un negocio y todavía no tienes página web, o tu web actual es antigua y no se ve bien en el móvil,
-          podemos ayudarte a tener una web sencilla, rápida y profesional, con una demo gratuita antes de decidir.
-        </p>
-      </section>
     </main>
 
     <footer>
