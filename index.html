@@ -188,15 +188,6 @@
       font-size: 1.1rem;
     }
 
-    .hero-note {
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
-
-    .hero-note strong {
-      color: var(--text);
-    }
-
     /* HERO CARD */
 
     .hero-card-wrap {
@@ -210,7 +201,7 @@
       padding: 18px 16px;
       box-shadow: var(--shadow-soft);
       border: 1px solid rgba(15, 23, 42, 0.06);
-      max-width: 360px;
+      max-width: 420px;
       width: 100%;
       position: relative;
       overflow: hidden;
@@ -244,87 +235,24 @@
       border-radius: var(--radius-md);
       border: 1px solid rgba(148, 163, 184, 0.4);
       overflow: hidden;
-      margin-bottom: 10px;
-      background: linear-gradient(135deg, #0f172a 0, #111827 45%, #1f2937 100%);
-      color: var(--white);
-      padding: 10px 12px;
     }
 
-    .hero-preview-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 6px;
-      font-size: 0.8rem;
-    }
-
-    .hero-preview-title {
-      font-weight: 600;
-    }
-
-    .hero-preview-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: #22c55e;
-    }
-
-    .hero-preview-body {
-      display: grid;
-      grid-template-columns: 3fr 2.4fr;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .hero-preview-menu {
-      font-size: 0.78rem;
-    }
-
-    .hero-preview-menu h4 {
-      font-size: 0.8rem;
-      margin-bottom: 4px;
-      opacity: 0.9;
-    }
-
-    .hero-preview-menu ul {
-      list-style: none;
-    }
-
-    .hero-preview-menu li {
-      opacity: 0.85;
-    }
-
-    .hero-preview-photo {
-      border-radius: 10px;
-      height: 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-preview-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .hero-preview a {
       display: block;
     }
 
-    .hero-preview-photo::after {
-      content: "elllarsantander.com";
-      position: absolute;
-      bottom: 8px;
-      left: 10px;
-      font-size: 0.7rem;
-      padding: 3px 7px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.7);
-      color: #e5e7eb;
+    .hero-preview img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-card-pricing {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-top: 4px;
+      margin-top: 8px;
       font-size: 0.85rem;
       color: var(--text-soft);
     }
@@ -540,14 +468,31 @@
       border-radius: var(--radius-md);
       border: 1px solid rgba(148, 163, 184, 0.5);
       font-size: 0.9rem;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 10px 18px rgba(148, 163, 184, 0.18);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .example-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(148, 163, 184, 0.26);
     }
 
     .example-thumb {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid rgba(148, 163, 184, 0.4);
-      max-height: 150px;
+      height: 210px;
+    }
+
+    .example-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .example-title {
@@ -560,10 +505,6 @@
       color: var(--text-soft);
       margin-bottom: 4px;
       word-break: break-all;
-    }
-
-    .example-url a {
-      text-decoration: underline;
     }
 
     .example-tag {
@@ -614,14 +555,9 @@
       }
     }
 
-    .cta-final-contact p {
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-    }
-
     .cta-final-contact a {
       font-weight: 600;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     footer {
@@ -636,7 +572,7 @@
   <div class="page">
     <header>
       <div class="logo">
-        <div class="logo-mark">T</div>
+        <div class="logo-mark">W</div>
         <div>Tu Web Desde Cero</div>
       </div>
       <div class="nav-small">
@@ -672,9 +608,6 @@
               <span>Quiero una web de muestra gratis</span>
             </a>
           </div>
-          <p class="hero-note">
-            <strong>Sin compromiso.</strong> Te mostramos cómo quedaría tu web antes de decidir nada.
-          </p>
         </div>
 
         <div class="hero-card-wrap">
@@ -686,25 +619,10 @@
             </div>
 
             <div class="hero-preview">
-              <div class="hero-preview-header">
-                <div class="hero-preview-title">elllarsantander.com</div>
-                <div class="hero-preview-dot"></div>
-              </div>
-              <div class="hero-preview-body">
-                <div class="hero-preview-menu">
-                  <h4>Qué se ve en la web</h4>
-                  <ul>
-                    <li>Foto del negocio</li>
-                    <li>Explicación corta</li>
-                    <li>Servicios, menú y contacto</li>
-                  </ul>
-                </div>
-                <div class="hero-preview-photo">
-                  <!-- Sustituye la ruta por la captura real del Llar -->
-                  <img src="img/elllarsantander-demo.webp"
-                       alt="Vista previa de la web de El Llar Santander" loading="lazy" />
-                </div>
-              </div>
+              <a href="https://elllarsantander.com" target="_blank" rel="noopener">
+                <img src="img/elllarsantander-demo.webp"
+                     alt="Vista de la web de El Llar Santander" loading="lazy" />
+              </a>
             </div>
 
             <div class="hero-card-pricing">
@@ -820,35 +738,25 @@
         </p>
 
         <div class="examples-grid">
-          <div class="example-card">
+          <a href="https://elllarsantander.com" target="_blank" rel="noopener" class="example-card">
             <div class="example-thumb">
-              <!-- Captura de la web de El Llar -->
-              <img src="img/elllarsantander-thumb.webp"
+              <img src="img/elllarsantander-demo.webp"
                    alt="Captura de la web de El Llar Santander" loading="lazy" />
             </div>
             <div class="example-title">El Llar Santander</div>
-            <div class="example-url">
-              <a href="https://elllarsantander.com" target="_blank" rel="noopener">
-                https://elllarsantander.com
-              </a>
-            </div>
+            <div class="example-url">https://elllarsantander.com</div>
             <div class="example-tag">Restaurante / Asador</div>
-          </div>
+          </a>
 
-          <div class="example-card">
+          <a href="https://lasecretburgers.com" target="_blank" rel="noopener" class="example-card">
             <div class="example-thumb">
-              <!-- Captura de la web de La Secret Burgers -->
-              <img src="img/lasecretburgers-thumb.webp"
+              <img src="img/lasecretburgers-demo.webp"
                    alt="Captura de la web de La Secret Burgers" loading="lazy" />
             </div>
             <div class="example-title">La Secret Burgers</div>
-            <div class="example-url">
-              <a href="https://lasecretburgers.com" target="_blank" rel="noopener">
-                https://lasecretburgers.com
-              </a>
-            </div>
+            <div class="example-url">https://lasecretburgers.com</div>
             <div class="example-tag">Hamburguesería</div>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -862,7 +770,6 @@
             </p>
           </div>
           <div class="cta-final-contact">
-            <p>📩 Email: <a href="mailto:contacto@webdesdecero.com">contacto@webdesdecero.com</a></p>
             <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">✉️</span>
