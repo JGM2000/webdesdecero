@@ -6,6 +6,11 @@
   <title>Tu Web Desde Cero | Webs sencillas para negocios</title>
   <meta name="description" content="Tu Web Desde Cero crea páginas web sencillas y profesionales para negocios. Primero te hacemos una web de muestra gratis, y solo pagas si te convence." />
 
+  <!-- Favicon + Apple Touch Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+
   <style>
     :root {
       --primary: #0f172a;
@@ -57,9 +62,7 @@
       margin-bottom: 32px;
     }
 
-    /* ----------------------------
-       NUEVO LOGO (W DOBLE LÍNEA)
-       ---------------------------- */
+    /* LOGO */
 
     .logo {
       display: flex;
@@ -81,8 +84,9 @@
     }
 
     .logo-mark img {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
       display: block;
     }
 
@@ -196,7 +200,7 @@
       font-size: 1.1rem;
     }
 
-    /* HERO CARD */
+    /* HERO CARD / EJEMPLO */
 
     .hero-card-wrap {
       display: flex;
@@ -263,7 +267,7 @@
       color: var(--accent);
     }
 
-    /* FEATURES GRID */
+    /* SECCIONES GENERALES */
 
     section {
       margin-bottom: 32px;
@@ -280,6 +284,8 @@
       font-size: 0.95rem;
       max-width: 520px;
     }
+
+    /* FEATURES GRID */
 
     .features-grid {
       margin-top: 16px;
@@ -361,6 +367,11 @@
       .pricing-numbers {
         text-align: left;
       }
+    }
+
+    .pricing-setup,
+    .pricing-month {
+      margin-bottom: 6px;
     }
 
     .pricing-setup span.label,
@@ -530,6 +541,12 @@
       }
     }
 
+    .cta-final h2 {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+      letter-spacing: -0.03em;
+    }
+
     .cta-final p {
       font-size: 0.93rem;
       color: #e5e7eb;
@@ -557,13 +574,12 @@
     }
   </style>
 </head>
-
 <body>
   <div class="page">
     <header>
       <div class="logo">
         <div class="logo-mark">
-          <img src="img/logo-w.svg" alt="Tu Web Desde Cero Logo" />
+          <img src="img/logo_transparent.png" alt="Tu Web Desde Cero Logo" />
         </div>
         <div>Tu Web Desde Cero</div>
       </div>
@@ -611,7 +627,7 @@
             </div>
 
             <div class="hero-preview">
-              <a href="https://elllarsantander.com" target="_blank">
+              <a href="https://elllarsantander.com" target="_blank" rel="noopener">
                 <img src="img/elllarsantander-demo.webp"
                      alt="Vista de la web de El Llar Santander" loading="lazy" />
               </a>
@@ -727,18 +743,18 @@
         </p>
 
         <div class="examples-grid">
-          <a href="https://elllarsantander.com" target="_blank" class="example-card">
+          <a href="https://elllarsantander.com" target="_blank" rel="noopener" class="example-card">
             <div class="example-thumb">
-              <img src="img/elllarsantander-demo.webp" alt="Web El Llar Santander">
+              <img src="img/elllarsantander-demo.webp" alt="Web El Llar Santander" loading="lazy">
             </div>
             <div class="example-title">El Llar Santander</div>
             <div class="example-url">https://elllarsantander.com</div>
             <div class="example-tag">Restaurante / Asador</div>
           </a>
 
-          <a href="https://lasecretburgers.com" target="_blank" class="example-card">
+          <a href="https://lasecretburgers.com" target="_blank" rel="noopener" class="example-card">
             <div class="example-thumb">
-              <img src="img/lasecretburgers-demo.webp" alt="Web La Secret Burgers">
+              <img src="img/lasecretburgers-demo.webp" alt="Web La Secret Burgers" loading="lazy">
             </div>
             <div class="example-title">La Secret Burgers</div>
             <div class="example-url">https://lasecretburgers.com</div>
@@ -757,7 +773,7 @@
             </p>
           </div>
           <div class="cta-final-contact">
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra"
+            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">✉️</span>
               <span>Quiero mi web de muestra</span>
