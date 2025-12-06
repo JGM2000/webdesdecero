@@ -3,13 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tu Web Desde Cero | Webs sencillas para negocios</title>
-  <meta name="description" content="Tu Web Desde Cero crea páginas web sencillas y profesionales para negocios. Primero te hacemos una web de muestra gratis, y solo pagas si te convence." />
+
+  <!-- SEO básico -->
+  <title>Diseño web para negocios | Tu Web Desde Cero</title>
+  <meta name="description" content="Creamos páginas web sencillas, rápidas y profesionales para negocios. Primero te hacemos una web de muestra gratis y solo pagas si te convence." />
+  <link rel="canonical" href="https://webdesdecero.es/" />
 
   <!-- Favicon + Apple Touch Icon -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
+
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diseño web para negocios | Tu Web Desde Cero">
+  <meta property="og:description" content="Páginas web sencillas y profesionales para negocios. Te hacemos una web de muestra gratis y solo pagas si te convence.">
+  <meta property="og:url" content="https://webdesdecero.es/">
+  <meta property="og:image" content="https://webdesdecero.es/img/logo_transparent.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Diseño web para negocios | Tu Web Desde Cero">
+  <meta name="twitter:description" content="Páginas web sencillas y profesionales para negocios. Te hacemos una web de muestra gratis y solo pagas si te convence.">
+  <meta name="twitter:image" content="https://webdesdecero.es/img/logo_transparent.png">
+
+  <!-- Marcado estructurado (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tu Web Desde Cero",
+    "url": "https://webdesdecero.es/",
+    "image": "https://webdesdecero.es/img/logo_transparent.png",
+    "description": "Servicio de diseño web para negocios. Creamos webs sencillas, rápidas y profesionales, con demo gratuita antes de pagar.",
+    "email": "contacto@webdesdecero.es",
+    "priceRange": "€",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ES"
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -566,6 +600,26 @@
       text-decoration: none;
     }
 
+    /* BLOQUE SEO EXTRA (texto orientado a búsquedas) */
+
+    .seo-extra {
+      margin-top: 32px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(148, 163, 184, 0.35);
+      font-size: 0.92rem;
+      color: var(--text-soft);
+    }
+
+    .seo-extra h2 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .seo-extra p + p {
+      margin-top: 6px;
+    }
+
     footer {
       margin-top: 30px;
       font-size: 0.8rem;
@@ -584,7 +638,7 @@
         <div>Tu Web Desde Cero</div>
       </div>
       <div class="nav-small">
-        <a href="mailto:contacto@webdesdecero.com?subject=Contacto%20Tu%20Web%20Desde%20Cero"
+        <a href="mailto:contacto@webdesdecero.es?subject=Contacto%20Tu%20Web%20Desde%20Cero"
            class="btn-header">
           <span class="icon">✉️</span>
           <span>Contactar</span>
@@ -610,7 +664,7 @@
           </p>
 
           <div class="hero-cta">
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
+            <a href="mailto:contacto@webdesdecero.es?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">✉️</span>
               <span>Quiero una web de muestra gratis</span>
@@ -713,7 +767,7 @@
             <h3>Nos escribes</h3>
             <p>
               Mándanos un correo con el nombre de tu negocio, nosotros hacemos el resto:
-              <strong>contacto@webdesdecero.com</strong>.
+              <strong>contacto@webdesdecero.es</strong>.
             </p>
           </div>
 
@@ -773,13 +827,31 @@
             </p>
           </div>
           <div class="cta-final-contact">
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
+            <a href="mailto:contacto@webdesdecero.es?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">✉️</span>
               <span>Quiero mi web de muestra</span>
             </a>
           </div>
         </div>
+      </section>
+
+      <!-- BLOQUE SEO EXTRA -->
+      <section class="seo-extra">
+        <h2>Diseño web sencillo para negocios pequeños</h2>
+        <p>
+          En Tu Web Desde Cero nos centramos en crear páginas web claras y fáciles de usar para negocios reales:
+          restaurantes, bares, clínicas, talleres, tiendas físicas, profesionales autónomos y pequeñas empresas
+          que necesitan presencia online sin complicarse.
+        </p>
+        <p>
+          Diseñamos webs optimizadas para móvil, con la información básica que tus clientes buscan: qué haces,
+          dónde estás, horarios, servicios y cómo contactar contigo. Sin menús eternos ni elementos que distraigan.
+        </p>
+        <p>
+          Si tienes un negocio y todavía no tienes página web, o tu web actual es antigua y no se ve bien en el móvil,
+          podemos ayudarte a tener una web sencilla, rápida y profesional, con una demo gratuita antes de decidir.
+        </p>
       </section>
     </main>
 
