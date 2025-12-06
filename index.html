@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tu Web Desde Cero | Webs sencillas para negocios</title>
-  <meta name="description" content="Tu Web Desde Cero crea páginas web sencillas y profesionales para negocios desde 40€ de alta y 10€/mes de mantenimiento. Nosotros la montamos, tú te olvidas." />
+  <meta name="description" content="Tu Web Desde Cero crea páginas web sencillas y profesionales para negocios. Primero te hacemos una web de muestra gratis, y solo pagas si te convence." />
 
   <style>
     :root {
@@ -79,19 +79,27 @@
     }
 
     .nav-small {
-      font-size: 0.9rem;
-      color: var(--text-soft);
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .nav-pill {
-      padding: 6px 10px;
+    .btn-header {
       border-radius: 999px;
-      background: rgba(37, 99, 235, 0.08);
+      padding: 8px 16px;
+      border: 1px solid rgba(37, 99, 235, 0.7);
+      background: rgba(15, 23, 42, 0.02);
+      font-size: 0.9rem;
       color: var(--accent);
       font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-header span.icon {
+      font-size: 1rem;
     }
 
     /* HERO */
@@ -315,7 +323,7 @@
     }
 
     .hero-preview-photo::after {
-      content: "Tu negocio";
+      content: "elllarsantander.com";
       position: absolute;
       bottom: 8px;
       left: 10px;
@@ -337,7 +345,7 @@
 
     .hero-card-pricing strong {
       color: var(--accent);
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     /* SECTIONS */
@@ -633,8 +641,11 @@
         <div>Tu Web Desde Cero</div>
       </div>
       <div class="nav-small">
-        <span class="nav-pill">Desde 40€ de alta · 10€/mes</span>
-        <span>Webs sencillas para negocios</span>
+        <a href="mailto:contacto@webdesdecero.com?subject=Contacto%20Tu%20Web%20Desde%20Cero"
+           class="btn-header">
+          <span class="icon">✉️</span>
+          <span>Contactar</span>
+        </a>
       </div>
     </header>
 
@@ -644,54 +655,55 @@
         <div>
           <div class="hero-kicker">
             <span>✓</span>
-            <div>Tu negocio con web propia, sin complicarte</div>
+            <div>Primero te hacemos una web de muestra gratis</div>
           </div>
           <h1>
-            Creamos tu web desde cero,
-            <span>por 10€/mes.</span>
+            Tu web desde cero,
+            <span>sin complicarte.</span>
           </h1>
           <p class="hero-subtitle">
-            Página web sencilla, clara y profesional para tu negocio. 
-            Nosotros la montamos y la mantenemos, tú te olvidas.
+            Creamos una página web sencilla y profesional para tu negocio. 
+            Primero ves una demo gratuita, y solo pagas si te convence.
           </p>
 
           <ul class="hero-bullets">
+            <li>Enseñamos quién eres, qué haces y cómo contactarte.</li>
             <li>Ideal para negocios locales, servicios y pequeños comercios.</li>
-            <li>Texto, estructura y diseño hechos por nosotros.</li>
-            <li>Sin contratos raros ni facturas sorpresa.</li>
+            <li>Nos ocupamos del texto, la estructura y el diseño.</li>
           </ul>
 
           <div class="hero-cta">
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20mi%20web%20desde%20cero&body=Hola,%20me%20gustar%C3%ADa%20crear%20una%20web%20para%20mi%20negocio."
+            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">✉️</span>
-              <span>Quiero una web para mi negocio</span>
+              <span>Quiero una web de muestra gratis</span>
             </a>
           </div>
           <p class="hero-note">
-            <strong>Alta: 40€ · Mantenimiento: desde 10€/mes.</strong> 
-            Cambios básicos incluidos.
+            <strong>Sin compromiso.</strong> Te mostramos cómo quedaría tu web antes de decidir nada.
           </p>
         </div>
 
         <div class="hero-card-wrap">
           <div class="hero-card">
             <div class="hero-card-tag">Ejemplo real</div>
-            <div class="hero-site-name">Tu Web Desde Cero</div>
-            <div class="hero-site-sub">Así de simple será la web de tu negocio.</div>
+            <div class="hero-site-name">El Llar Santander</div>
+            <div class="hero-site-sub">
+              Un ejemplo de web sencilla y clara para un negocio real.
+            </div>
 
             <div class="hero-preview">
               <div class="hero-preview-header">
-                <div class="hero-preview-title">Inicio · Tu negocio</div>
+                <div class="hero-preview-title">elllarsantander.com</div>
                 <div class="hero-preview-dot"></div>
               </div>
               <div class="hero-preview-body">
                 <div class="hero-preview-menu">
-                  <h4>Lo que verá tu cliente</h4>
+                  <h4>Qué se ve en la web</h4>
                   <ul>
-                    <li>Quién eres</li>
-                    <li>Qué ofreces</li>
-                    <li>Cómo contactarte</li>
+                    <li>Foto del negocio</li>
+                    <li>Explicación corta</li>
+                    <li>Menú/servicios y contacto</li>
                   </ul>
                 </div>
                 <div class="hero-preview-photo"></div>
@@ -700,12 +712,12 @@
 
             <div class="hero-card-pricing">
               <div>
-                Desde <strong>10€/mes</strong><br />
-                <span>Mantenimiento y cambios básicos</span>
+                Ejemplo basado en un caso real<br />
+                <strong>Así de simple será la tuya</strong>
               </div>
               <div style="text-align:right;">
-                Alta única: <strong>40€</strong><br />
-                <span style="font-size:0.8rem;">Web lista en pocos días</span>
+                Primero, demo gratis<br />
+                <strong>Luego decides si seguir</strong>
               </div>
             </div>
           </div>
@@ -714,9 +726,9 @@
 
       <!-- FEATURES -->
       <section>
-        <h2 class="section-title">Web sencilla. Justo lo que tu negocio necesita.</h2>
+        <h2 class="section-title">Una web sencilla para que tu negocio se entienda.</h2>
         <p class="section-subtitle">
-          Sin menús complicados ni textos eternos. Una web clara para que te encuentren, entiendan qué haces y puedan contactarte.
+          No necesitas una web enorme. Necesitas algo claro, serio y fácil de usar.
         </p>
 
         <div class="features-grid">
@@ -724,7 +736,7 @@
             <div class="feature-icon">💻</div>
             <h3>Presencia profesional</h3>
             <p>
-              Tu negocio con web propia, dominio y un aspecto serio. Nada de páginas improvisadas o perfiles sueltos.
+              Tu negocio con web propia y dominio, sin depender solo de redes sociales o directorios.
             </p>
           </div>
 
@@ -732,7 +744,7 @@
             <div class="feature-icon">📱</div>
             <h3>Bien en móvil</h3>
             <p>
-              La mayoría de visitas serán desde el móvil. Tu web se verá bien y cargará rápido en cualquier dispositivo.
+              La mayoría de visitas serán desde el móvil. Tu web se verá bien y cargará rápido.
             </p>
           </div>
 
@@ -750,9 +762,9 @@
       <section>
         <div class="pricing">
           <div class="pricing-main">
-            <h3>Precios claros desde el primer día.</h3>
+            <h3>Primero te enseñamos, luego decides.</h3>
             <p>
-              Pagas una vez la creación de la web y una cuota mensual baja. No hay costes ocultos.
+              Te preparamos una web de muestra gratis. Si te gusta, la dejamos fija y activamos el servicio.
             </p>
           </div>
 
@@ -784,24 +796,24 @@
             <div class="step-number">1</div>
             <h3>Nos escribes</h3>
             <p>
-              Nos mandas un correo con el nombre de tu negocio y qué haces: 
+              Mándanos un correo con el nombre de tu negocio y qué haces a 
               <strong>contacto@webdesdecero.com</strong>.
             </p>
           </div>
 
           <div class="step">
             <div class="step-number">2</div>
-            <h3>Preparamos tu web</h3>
+            <h3>Demo gratuita</h3>
             <p>
-              Te pedimos textos básicos y 3–5 fotos. Con eso montamos la web y te enseñamos una versión previa.
+              Con la información básica montamos una web de muestra y te enviamos el enlace para que la veas.
             </p>
           </div>
 
           <div class="step">
             <div class="step-number">3</div>
-            <h3>La publicamos</h3>
+            <h3>La activamos</h3>
             <p>
-              Ajustamos lo necesario, la publicamos y a partir de ahí la mantenemos por ti desde 10€/mes.
+              Si te convence, la dejamos fija, añadimos tu dominio y nos encargamos del mantenimiento mensual.
             </p>
           </div>
         </div>
@@ -841,14 +853,14 @@
       <section>
         <div class="cta-final">
           <div>
-            <h2>¿Quieres una web sencilla y profesional para tu negocio?</h2>
+            <h2>¿Quieres una web de muestra gratis para tu negocio?</h2>
             <p>
-              Escríbenos y cuéntanos qué tipo de negocio tienes. Te respondemos con los próximos pasos y plazos.
+              Escríbenos y cuéntanos qué tipo de negocio tienes. Te mandamos una propuesta de web sin compromiso.
             </p>
           </div>
           <div class="cta-final-contact">
             <p>📩 Email: <a href="mailto:contacto@webdesdecero.com">contacto@webdesdecero.com</a></p>
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20mi%20web%20desde%20cero&body=Hola,%20me%20gustar%C3%ADa%20crear%20una%20web%20para%20mi%20negocio."
+            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
               <span class="icon">➡️</span>
               <span>Escribir a Tu Web Desde Cero</span>
