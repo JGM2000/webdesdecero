@@ -161,26 +161,6 @@
       max-width: 520px;
     }
 
-    .hero-bullets {
-      list-style: none;
-      margin-bottom: 20px;
-      color: var(--text-soft);
-      font-size: 0.95rem;
-    }
-
-    .hero-bullets li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .hero-bullets li::before {
-      content: "•";
-      color: var(--accent);
-      font-size: 1.1rem;
-    }
-
     .hero-cta {
       display: flex;
       flex-wrap: wrap;
@@ -315,11 +295,17 @@
     }
 
     .hero-preview-photo {
-      background: radial-gradient(circle at top, #93c5fd 0, #1d4ed8 35%, #020617 100%);
       border-radius: 10px;
       height: 80px;
       position: relative;
       overflow: hidden;
+    }
+
+    .hero-preview-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-preview-photo::after {
@@ -556,6 +542,14 @@
       font-size: 0.9rem;
     }
 
+    .example-thumb {
+      margin-bottom: 6px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      max-height: 150px;
+    }
+
     .example-title {
       font-weight: 600;
       margin-bottom: 4px;
@@ -565,6 +559,11 @@
       font-size: 0.8rem;
       color: var(--text-soft);
       margin-bottom: 4px;
+      word-break: break-all;
+    }
+
+    .example-url a {
+      text-decoration: underline;
     }
 
     .example-tag {
@@ -617,7 +616,7 @@
 
     .cta-final-contact p {
       font-size: 0.85rem;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
     }
 
     .cta-final-contact a {
@@ -662,7 +661,7 @@
             <span>sin complicarte.</span>
           </h1>
           <p class="hero-subtitle">
-            Creamos una página web sencilla y profesional para tu negocio. 
+            Creamos una página web sencilla y profesional para tu negocio.
             Primero ves una demo gratuita, y solo pagas si te convence.
           </p>
 
@@ -697,10 +696,14 @@
                   <ul>
                     <li>Foto del negocio</li>
                     <li>Explicación corta</li>
-                    <li>Menú/servicios y contacto</li>
+                    <li>Servicios, menú y contacto</li>
                   </ul>
                 </div>
-                <div class="hero-preview-photo"></div>
+                <div class="hero-preview-photo">
+                  <!-- Sustituye la ruta por la captura real del Llar -->
+                  <img src="img/elllarsantander-demo.webp"
+                       alt="Vista previa de la web de El Llar Santander" loading="lazy" />
+                </div>
               </div>
             </div>
 
@@ -754,7 +757,7 @@
           <div class="pricing-main">
             <h3>Primero te enseñamos, luego decides.</h3>
             <p>
-              Te preparamos una web de muestra gratis. Si te gusta, hacemos los retoques que ecesites y activamos el servicio.
+              Te preparamos una web de muestra gratis. Si te gusta, hacemos los retoques que necesites y activamos el servicio.
             </p>
           </div>
 
@@ -786,7 +789,7 @@
             <div class="step-number">1</div>
             <h3>Nos escribes</h3>
             <p>
-              Mándanos un correo con el nombre de tu negocio, nosotros hacemos el resto: 
+              Mándanos un correo con el nombre de tu negocio, nosotros hacemos el resto:
               <strong>contacto@webdesdecero.com</strong>.
             </p>
           </div>
@@ -818,6 +821,11 @@
 
         <div class="examples-grid">
           <div class="example-card">
+            <div class="example-thumb">
+              <!-- Captura de la web de El Llar -->
+              <img src="img/elllarsantander-thumb.webp"
+                   alt="Captura de la web de El Llar Santander" loading="lazy" />
+            </div>
             <div class="example-title">El Llar Santander</div>
             <div class="example-url">
               <a href="https://elllarsantander.com" target="_blank" rel="noopener">
@@ -828,6 +836,11 @@
           </div>
 
           <div class="example-card">
+            <div class="example-thumb">
+              <!-- Captura de la web de La Secret Burgers -->
+              <img src="img/lasecretburgers-thumb.webp"
+                   alt="Captura de la web de La Secret Burgers" loading="lazy" />
+            </div>
             <div class="example-title">La Secret Burgers</div>
             <div class="example-url">
               <a href="https://lasecretburgers.com" target="_blank" rel="noopener">
@@ -852,6 +865,8 @@
             <p>📩 Email: <a href="mailto:contacto@webdesdecero.com">contacto@webdesdecero.com</a></p>
             <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
                class="btn-primary">
+              <span class="icon">✉️</span>
+              <span>Quiero mi web de muestra</span>
             </a>
           </div>
         </div>
