@@ -57,6 +57,10 @@
       margin-bottom: 32px;
     }
 
+    /* ----------------------------
+       NUEVO LOGO (W DOBLE LÍNEA)
+       ---------------------------- */
+
     .logo {
       display: flex;
       align-items: center;
@@ -66,16 +70,20 @@
     }
 
     .logo-mark {
-      width: 30px;
-      height: 30px;
-      border-radius: 9px;
-      background: radial-gradient(circle at 20% 0, #bfdbfe, #2563eb);
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 0, #e0ecff, #2563eb);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--white);
-      font-size: 18px;
-      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    }
+
+    .logo-mark img {
+      width: 22px;
+      height: 22px;
+      display: block;
     }
 
     .nav-small {
@@ -231,14 +239,11 @@
       margin-bottom: 10px;
     }
 
-    .hero-preview {
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      overflow: hidden;
-    }
-
     .hero-preview a {
       display: block;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.4);
     }
 
     .hero-preview img {
@@ -249,20 +254,16 @@
     }
 
     .hero-card-pricing {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-top: 8px;
+      margin-top: 10px;
       font-size: 0.85rem;
       color: var(--text-soft);
     }
 
     .hero-card-pricing strong {
       color: var(--accent);
-      font-size: 0.95rem;
     }
 
-    /* SECTIONS */
+    /* FEATURES GRID */
 
     section {
       margin-bottom: 32px;
@@ -279,8 +280,6 @@
       font-size: 0.95rem;
       max-width: 520px;
     }
-
-    /* FEATURES GRID */
 
     .features-grid {
       margin-top: 16px;
@@ -364,11 +363,6 @@
       }
     }
 
-    .pricing-setup,
-    .pricing-month {
-      margin-bottom: 6px;
-    }
-
     .pricing-setup span.label,
     .pricing-month span.label {
       font-size: 0.78rem;
@@ -382,6 +376,7 @@
     .pricing-setup strong,
     .pricing-month strong {
       font-size: 1.35rem;
+      color: var(--accent);
     }
 
     .pricing-hint {
@@ -408,7 +403,7 @@
       background: #0f172a;
       color: var(--white);
       border-radius: var(--radius-md);
-      padding: 12px 14px 14px;
+      padding: 12px 14px;
       position: relative;
       overflow: hidden;
     }
@@ -447,7 +442,7 @@
       opacity: 0.35;
     }
 
-    /* EXAMPLES & CTA FINAL */
+    /* EXAMPLES */
 
     .examples-grid {
       margin-top: 14px;
@@ -467,7 +462,6 @@
       padding: 12px;
       border-radius: var(--radius-md);
       border: 1px solid rgba(148, 163, 184, 0.5);
-      font-size: 0.9rem;
       display: block;
       text-decoration: none;
       color: inherit;
@@ -516,6 +510,8 @@
       color: #1d4ed8;
     }
 
+    /* CTA FINAL */
+
     .cta-final {
       margin-top: 10px;
       background: #0f172a;
@@ -534,12 +530,6 @@
       }
     }
 
-    .cta-final h2 {
-      font-size: 1.4rem;
-      margin-bottom: 6px;
-      letter-spacing: -0.03em;
-    }
-
     .cta-final p {
       font-size: 0.93rem;
       color: #e5e7eb;
@@ -555,8 +545,7 @@
       }
     }
 
-    .cta-final-contact a {
-      font-weight: 600;
+    .cta-final-contact .btn-primary {
       text-decoration: none;
     }
 
@@ -568,11 +557,14 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <header>
       <div class="logo">
-        <div class="logo-mark">W</div>
+        <div class="logo-mark">
+          <img src="img/logo-w.svg" alt="Tu Web Desde Cero Logo" />
+        </div>
         <div>Tu Web Desde Cero</div>
       </div>
       <div class="nav-small">
@@ -619,17 +611,14 @@
             </div>
 
             <div class="hero-preview">
-              <a href="https://elllarsantander.com" target="_blank" rel="noopener">
+              <a href="https://elllarsantander.com" target="_blank">
                 <img src="img/elllarsantander-demo.webp"
                      alt="Vista de la web de El Llar Santander" loading="lazy" />
               </a>
             </div>
 
             <div class="hero-card-pricing">
-              <div>
-                Ejemplo basado en un caso real<br />
-                <strong>Así de simple será la tuya</strong>
-              </div>
+              Ejemplo basado en un caso real · <strong>Así de simple será la tuya</strong>
             </div>
           </div>
         </div>
@@ -738,20 +727,18 @@
         </p>
 
         <div class="examples-grid">
-          <a href="https://elllarsantander.com" target="_blank" rel="noopener" class="example-card">
+          <a href="https://elllarsantander.com" target="_blank" class="example-card">
             <div class="example-thumb">
-              <img src="img/elllarsantander-demo.webp"
-                   alt="Captura de la web de El Llar Santander" loading="lazy" />
+              <img src="img/elllarsantander-demo.webp" alt="Web El Llar Santander">
             </div>
             <div class="example-title">El Llar Santander</div>
             <div class="example-url">https://elllarsantander.com</div>
             <div class="example-tag">Restaurante / Asador</div>
           </a>
 
-          <a href="https://lasecretburgers.com" target="_blank" rel="noopener" class="example-card">
+          <a href="https://lasecretburgers.com" target="_blank" class="example-card">
             <div class="example-thumb">
-              <img src="img/lasecretburgers-demo.webp"
-                   alt="Captura de la web de La Secret Burgers" loading="lazy" />
+              <img src="img/lasecretburgers-demo.webp" alt="Web La Secret Burgers">
             </div>
             <div class="example-title">La Secret Burgers</div>
             <div class="example-url">https://lasecretburgers.com</div>
@@ -770,7 +757,7 @@
             </p>
           </div>
           <div class="cta-final-contact">
-            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra&body=Hola,%20quiero%20que%20me%20hag%C3%A1is%20una%20web%20de%20muestra%20para%20mi%20negocio."
+            <a href="mailto:contacto@webdesdecero.com?subject=Quiero%20una%20web%20de%20muestra"
                class="btn-primary">
               <span class="icon">✉️</span>
               <span>Quiero mi web de muestra</span>
@@ -786,8 +773,7 @@
   </div>
 
   <script>
-    const y = new Date().getFullYear();
-    document.getElementById("year").textContent = y;
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
